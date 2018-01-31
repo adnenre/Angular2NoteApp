@@ -1,0 +1,6 @@
+.tasks_container{
+	padding-left:10px;
+    display:flex;
+    flex-direction:column;
+    margin:1rem 0;
+}

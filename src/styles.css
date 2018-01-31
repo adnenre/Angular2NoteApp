@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+background: -webkit-radial-gradient(circle, #fff 0%, #bbb 85%) no-repeat;
+height:100vh;
+display:flex;
+}
+app-root{
+	margin:auto;
+}
+button,button:hover,button:focus{
+    cursor:pointer;
+    outline:none;
+}
+.health_task {
+	background:linear-gradient(45deg,#F44336,#EF9A9A);
+    box-shadow:0 0 20px 2px #Ef9A9A;
+}
+.family_task {
+    background: linear-gradient(45deg,#4CAF50,#AED581);
+    -webkit-box-shadow: 0 0 20px 2px #AED581;
+    box-shadow: 0 0 20px 2px #AED581;
+}
+.work_task {
+    background: linear-gradient(45deg,#9C27B0,#E1BEE7);
+    -webkit-box-shadow: 0 0 20px 2px #E1BEE7;
+    box-shadow: 0 0 20px 2px #E1BEE7;
+}
+.friends_task{
+	    background: linear-gradient(45deg,#FF9800,#FFCC80);
+    -webkit-box-shadow: 0 0 20px 2px #FFCC80;
+    box-shadow: 0 0 20px 2px #FFCC80;
+}
+.other_task{
+     background: linear-gradient(45deg,#039BE5,#80DEEA);
+     -webkit-box-shadow: 0 0 20px 2px #80DEEA;
+    box-shadow: 0 0 20px 2px #80DEEA;
+}
+.input-group>.custom-file:focus, .input-group>.custom-select:focus, .input-group>.form-control:focus {
+    z-index: 3;
+    outline: none;
+    box-shadow: none;
+    border-color: #ddd;
+}
+.form-control{
+    background-color:#ddd;
+}

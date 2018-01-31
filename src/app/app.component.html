@@ -1,0 +1,12 @@
+
+
+<div class="noteApp_container">
+
+  <app-header (taskCreated)='addTask($event)'></app-header>
+  <app-task *ngFor="let task_element of tasks_elements"
+  [task]="task_element" (taskDeleted)="deleteTask($event)"
+  ></app-task>
+  <app-footer [tasks_length]='show_tasks_length()'></app-footer>
+</div>
+
+

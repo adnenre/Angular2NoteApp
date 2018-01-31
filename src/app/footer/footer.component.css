@@ -1,0 +1,11 @@
+.footer_container{
+	
+	background:linear-gradient(45deg,#2da5e3,#ae09fd);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-top:1rem;
+}
+.footer_text{
+	font-size:0.8rem;
+	color:white;
+}

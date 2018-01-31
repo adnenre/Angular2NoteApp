@@ -1,0 +1,23 @@
+<div class="task_element ">
+		
+		<div class="task" [ngClass]='setClass()'>
+
+		<div class="task_header ">
+			<div class="task_title">
+				{{ task.name}}
+			</div>
+			<div class="task_controle">
+				<button class="task_btn" (click)='onTaskDeleted()' ><i class="fa fa-times" aria-hidden="true"></i></button>
+			</div>
+		</div>
+		
+		<div class="task_footer">
+			 <div class="task_category">
+		     	{{ task.category}}
+		     </div>
+			<div class="task_time">
+				<small>{{task.date}} {{task.time}} </small>
+			</div>
+		</div>
+	</div>
+</div>

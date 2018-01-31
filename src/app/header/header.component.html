@@ -1,0 +1,85 @@
+<div class="header_container bg_decoration">
+	<div class="header_overlay">
+		
+	</div>
+  <div class="note_title p-3 text-white">
+    <h5 class="note_title-big"> My Note</h5>
+    <small class="note_title-small">Manage your Note here</small>
+  </div>
+	
+    
+    <div class="btn_container align-self-flex-end">
+    	<button type="button" class="btn btn-lignt btn-add-note"  data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus"></i></button>
+    </div>
+    
+
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg_decoration">
+        <h5 class="modal-title text-white" id="exampleModalLabel">Add Note</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+      <div class="modal-body">
+        <!-- Note name -->
+        <div class="input-group">
+           <span class="input-group-addon bg_gradient" id="basic-addon1">Note Name</span>
+           <input [ngClass]='setClass()' class="form-control" type="text" required name="note_name" [(ngModel)]="newNote" aria-describedby="basic-addon1">
+        </div>
+       
+        <!-- Catégorie --> 
+        <h5 class="category_title bg_gradient">Categories</h5>
+        <div class="category_container">
+ 
+          <div class="radio health_task">
+            <label ><input type="radio" name="category" value="Health" [checked]='isChecked' [(ngModel)]="newCategorie" > Health</label>
+          </div>
+          <div class="radio work_task">
+            <label ><input type="radio" name="category" value="Work" [(ngModel)]="newCategorie"> Work</label>
+          </div>
+          <div class="radio family_task">
+            <label ><input type="radio" name="category" value="Family" [(ngModel)]="newCategorie"> Family</label>
+          </div>
+          <div class="radio friends_task">
+            <label > <input type="radio" name="category" value="Friends" [(ngModel)]="newCategorie"> Friends</label>
+          </div>
+          <div class="radio other_task">
+            <label ><input type="radio" name="category" value="other" [(ngModel)]="newCategorie"> Other</label>
+          </div>
+      </div>
+     <!-- input date -->
+        <div class="row">
+         
+          <div class="col-md-6">
+             <div class="input-group">
+              <span class="input-group-addon bg_gradient" id="basic-addon3"><i class="fa fa-calendar"></i></span>
+              <input  class="form-control" type="date"  name="date"  [(ngModel)]="newDate" aria-describedby="basic-addon3">
+          
+            </div>
+          </div>
+           <div class="col-md-6">
+              <div class="input-group">
+               <span class="input-group-addon bg_gradient" id="basic-addon2"><i class="fa fa-clock-o"></i></span>
+               <input class="form-control" type="time"  name="time" [(ngModel)]="newTime" aria-describedby="basic-addon2">
+             </div>
+          </div>
+        </div>
+      
+        
+        
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" (click)="onAddTask()">Add</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>

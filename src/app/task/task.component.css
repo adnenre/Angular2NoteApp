@@ -1,0 +1,40 @@
+.task_element{
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+}
+
+.task{
+	width:95%;
+	border-radius:5px;
+	padding:0.8rem;
+	display:flex;
+	flex-direction:column;
+	font-size:0.8rem;
+	color:white;
+	margin:0.2rem auto;
+    transition:200ms;
+    cursor:pointer;
+
+}
+.task:hover{
+	transform:scale(1.02);
+}
+
+.task_header,.task_footer{
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+    
+}
+.task_title,.task_time{
+	font-weight: 800;
+}
+
+.task_btn{
+	color:white;
+	background:transparent;
+	border:none;
+	font-size:0.7rem;
+	padding:0;
+}

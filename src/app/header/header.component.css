@@ -1,0 +1,110 @@
+.header_container{
+	height:100px;
+	display:flex;
+	justify-content:space-between;
+	position:relative;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	z-index:0;
+	border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    padding-bottom:1rem;
+    margin-bottom: 1rem;
+
+}
+.header_overlay{
+	z-index:-1;
+	position:absolute;
+	width:100%;
+	height:100%;
+	
+}
+.bg_decoration{
+	background:url('img/header.svg');
+	background-repeat: no-repeat;
+}
+.bg_gradient{
+	color:white !important;
+	background: linear-gradient(45deg,#2da5e3,#ae09fd); 
+}
+.btn_container{
+	align-self:flex-end;
+	padding-right:2rem;
+}
+.note_title > .note_title-big{
+ margin-bottom:0 !important;
+}
+.note_title > .note_title-small{
+	font-size:8px;;
+}
+.btn-add-note{
+	border-radius:50%;
+	color:white;
+	background:#8bc34a;
+	width: 60px;
+    height: 60px;
+    outline:none;
+    transition:200ms;
+}
+.btn-add-note:hover,
+.btn-add-note:focus{
+	outline:none;
+	 box-shadow: 0 0 20px 2px #AED581;
+
+}
+
+/* modal */
+.radio{
+	display: inline-flex;
+    min-width:75px;
+   
+    margin-bottom: .5rem;
+    justify-content: center;
+    border-radius: 10px;
+   
+    color: white;
+}
+.radio > label{ 
+	padding: 1rem;
+	display: flex;
+    flex-direction: column-reverse;
+}
+.radio > label > input{
+	margin:auto;
+}
+.input-group-addon {
+    padding: .5rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #464a4c;
+    text-align: center;
+    background-color: #eceeef;
+   border-radius: .25rem 0 0 .25rem;
+}
+.category_title {
+    
+    width: 107px;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px 5px 0 0;
+    font-size: 1rem;
+    margin: 1rem 0 0 0;
+}
+.category_container{
+	padding:1rem;
+	display:flex;
+	 flex-wrap: wrap;
+	justify-content:space-between;
+	border: solid 1px #ced4da;
+    border-radius: 0 5px 5px 5px;
+    margin-bottom: 1rem;
+    background-color:#ddd;
+}
+.form_warning{
+	border:solid 1px red;
+}
+.form_success{
+	border:solid 1px transparent;
+}
